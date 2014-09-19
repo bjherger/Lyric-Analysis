@@ -20,20 +20,9 @@ import bhUtilties
 
 #others
 import urllib2
-import argparse
-import operator
-import os
-import pandas as pd
-import numpy as np
-import random
-import string
-import sys
+
 import urlparse
 
-#specific
-from collections import Counter
-from mutagen.mp3 import MP3
-from mutagen.easyid3 import EasyID3
 
 #import setup
 # random.seed(0)  #for consistency. Remove this if you're interested in acutal testing
@@ -47,7 +36,6 @@ from mutagen.easyid3 import EasyID3
 
 def gen_search_url(artist, title, delim="+"):
     service = "http://www.lyricsmode.com/search.php?search="
-
     artist = delim.join(artist.split())
     title = delim.join(title.split())
     search_term = delim.join([artist, title])

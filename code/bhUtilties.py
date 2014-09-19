@@ -9,6 +9,7 @@
 #*********************************
 import multiprocessing
 import datetime
+import urllib2
 
 __author__ = 'bjherger'
 
@@ -24,8 +25,6 @@ import functools
 from xml.dom.minidom import parse
 
 import numpy as np
-
-import hw3
 
 # import sys
 # sys.stdout = open('2.6_Beer.txt', 'w')
@@ -106,6 +105,12 @@ def multi_map(function, sequence):
 
 # functions - File I/O
 ############################################
+def read_file(filename):
+    f = open(filename, 'r')
+    return f.read()
+
+def read_url(url):
+    return urllib2.urlopen(url).read()
 
 
 def readXMLByTag(file, tag):
@@ -170,6 +175,14 @@ def savePickle(object, filename):
 
 # functions - Strings
 ############################################
+
+def re_match(pattern, string):
+    match = re.findall(pattern, string)
+    match = list(match)
+    if len(match)>0:
+        return match
+    else:
+        return None
 
 
 def filterParameters(x):
@@ -259,4 +272,5 @@ def timeItEnd( startTimeLocal = None, numIterations=1, printOn = True):
 
 if __name__ == "__main__":
     print "Begin Main"
+    print re_match(r"t[a-z]e", "the fat tre")
     print "\nEnd Main"
