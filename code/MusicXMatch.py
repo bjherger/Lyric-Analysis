@@ -7,6 +7,9 @@
 # http://opensource.org/licenses/MIT
 #
 # *********************************
+import urllib
+import urllib2
+
 __author__ = 'bjherger'
 
 # imports
@@ -32,6 +35,7 @@ def load_API_KEY():
     :return: API_KEY
     """
     global API_KEY
+
     try:
         API_KEY = bhUtilities.read_file("/private/tmp/lyrics/musicxmatch.txt")
     except:
@@ -50,19 +54,16 @@ def get_track_id(artist="", track=""):
     """
     # variables
     API_method = "TRACK.SEARCH?"
-    delim = "%20"
-    queries_params = dict()
+    delim = "+"
+    query_params = dict()
 
     # parameters
-    queries_params["q_artist"] = delim.join(artist.split())
-    queries_params["q_track"] = delim.join(track.split())
-    queries_params["page_size"] = str(1)
+    query_params["q_artist"] = delim.join(artist.split())
+    query_params["q_track"] = delim.join(track.split())
+    query_params["page_size"] = str(1)
+    query_params["apikey"] = API_KEY
 
-    # build up query string
-    query_string = "apikey=" + API_KEY
-    for (key, value) in queries_params.iteritems():
-        local = "=".join([key, value])
-        query_string = "&".join([query_string, local])
+    query_string = urllib.urlencode(query_params)
 
     # generate url
     url = API_BASE + API_method + query_string
@@ -100,8 +101,16 @@ def get_lyrics(artist="", track=""):
     # song found case
     else:
 
+        # generate query
+
+        query_params = dict()
+        query_params["apikey"] = API_KEY
+        query_params["track_id"] = track_id
+
+        query_string = urllib.urlencode(query_params)
+
         # generate url
-        url = "http://api.musixmatch.com/ws/1.1/track.lyrics.get?apikey=" + API_KEY + "&track_id=" + track_id
+        url = "http://api.musixmatch.com/ws/1.1/track.lyrics.get?" + query_string
 
         # get page
         json_raw = bhUtilities.read_url(url)
@@ -127,8 +136,8 @@ def get_lyrics(artist="", track=""):
 
 # main
 # ###########################################
+load_API_KEY()
 if __name__ == "__main__":
-    load_API_KEY()
-    print API_KEY
-    pprint(get_lyrics("lady gaga", ""))
+
+    pprint(get_lyrics("lady gaga", "bad romance"))
 

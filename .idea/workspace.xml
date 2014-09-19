@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8376212-72b4-4e14-8306-e3a136050fc0" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/code/bhUtilties.py" afterPath="$PROJECT_DIR$/code/bhUtilities.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/GenerateLyrics.py" afterPath="$PROJECT_DIR$/code/GenerateLyrics.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/MusicXMatch.py" afterPath="$PROJECT_DIR$/code/MusicXMatch.py" />
     </list>
     <ignored path="project1.iws" />
@@ -42,10 +40,10 @@
           <file leaf-file-name="MusicXMatch.py" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/code/MusicXMatch.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.4" vertical-offset="270" max-vertical-offset="2100">
-                  <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+                <state vertical-scroll-proportion="0.7169811" vertical-offset="1811" max-vertical-offset="2235">
+                  <caret line="141" column="49" selection-start-line="141" selection-start-column="49" selection-end-line="141" selection-end-column="49" />
                   <folding>
-                    <element signature="e#312#330#0" expanded="true" />
+                    <element signature="e#231#244#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -342,7 +340,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -352,7 +350,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329235" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329235" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -388,7 +386,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="870">
           <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
           <folding>
-            <element signature="e#312#330#0" expanded="true" />
+            <element signature="e#231#244#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -419,10 +417,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/code/MusicXMatch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4" vertical-offset="270" max-vertical-offset="2100">
-          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.7169811" vertical-offset="1811" max-vertical-offset="2235">
+          <caret line="141" column="49" selection-start-line="141" selection-start-column="49" selection-end-line="141" selection-end-column="49" />
           <folding>
-            <element signature="e#312#330#0" expanded="true" />
+            <element signature="e#231#244#0" expanded="true" />
           </folding>
         </state>
       </provider>
