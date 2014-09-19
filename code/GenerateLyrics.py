@@ -16,7 +16,7 @@ __author__ = 'bjherger'
 # ###########################################
 
 # mine
-import bhUtilties
+import bhUtilities
 
 #others
 import urllib2

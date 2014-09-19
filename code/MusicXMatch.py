@@ -11,7 +11,7 @@ __author__ = 'bjherger'
 
 # imports
 # ###########################################
-import bhUtilties
+import bhUtilities
 import json
 import time
 
@@ -32,7 +32,11 @@ def load_API_KEY():
     :return: API_KEY
     """
     global API_KEY
-    API_KEY = bhUtilties.read_file("/private/tmp/lyrics/musicxmatch.txt")
+    try:
+        API_KEY = bhUtilities.read_file("/private/tmp/lyrics/musicxmatch.txt")
+    except:
+        print "Error loading API Key. Please place API key in /private/tmp/lyrics/musicxmatch.txt, or hard code in."
+
     return API_KEY
 
 
@@ -64,10 +68,10 @@ def get_track_id(artist="", track=""):
     url = API_BASE + API_method + query_string
 
     # get page
-    page = bhUtilties.read_url(url)
+    page = bhUtilities.read_url(url)
 
     # get track track_id
-    track_id = bhUtilties.re_match(r"\"track_id\":([0-9]+),", page)
+    track_id = bhUtilities.re_match(r"\"track_id\":([0-9]+),", page)
 
     if track_id:
         track_id = track_id[0]
@@ -100,7 +104,7 @@ def get_lyrics(artist="", track=""):
         url = "http://api.musixmatch.com/ws/1.1/track.lyrics.get?apikey=" + API_KEY + "&track_id=" + track_id
 
         # get page
-        json_raw = bhUtilties.read_url(url)
+        json_raw = bhUtilities.read_url(url)
 
         # get JSON
         data = json.loads(json_raw)
