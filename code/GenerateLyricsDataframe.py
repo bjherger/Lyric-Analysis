@@ -197,7 +197,7 @@ def scrape_single_genre(year_dict, genre):
 def write_csv_from_df(data_frame):
     """
     """
-    csv_name = "billboard_temp_data.csv"
+    csv_name = "../data/output/"+bhUtilities.time_as_string() + "billboard_temp_data.csv"
     data_frame.to_csv(csv_name, index=False, encoding="utf-8")
 
 
@@ -219,7 +219,7 @@ def main():
                      {'extension': 'holiday-songs', 'genre': 'holiday_airplay'}]
 
     # iterate through categories, for all years
-    for category in category_list[2:3]:
+    for category in category_list[:]:
 
         # unpack variables
         extension = category.get('extension', None)

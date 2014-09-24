@@ -176,6 +176,9 @@ def savePickle(object, filename):
 # functions - Strings
 ############################################
 
+def time_as_string():
+    return str(time.asctime(time.gmtime()))
+
 def re_match(pattern, string):
     match = re.findall(pattern, string)
     match = list(match)
@@ -272,5 +275,5 @@ def timeItEnd( startTimeLocal = None, numIterations=1, printOn = True):
 
 if __name__ == "__main__":
     print "Begin Main"
-    print re_match(r"t[a-z]e", "the fat tre")
+    print "It is now: ", time_as_string()
     print "\nEnd Main"

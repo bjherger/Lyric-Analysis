@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8376212-72b4-4e14-8306-e3a136050fc0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/code/GenerateLyricsDataframe.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/GenerateSongList.py" afterPath="$PROJECT_DIR$/code/GenerateSongList.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/MusicXMatch.py" afterPath="$PROJECT_DIR$/code/MusicXMatch.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data/BILLBOARD_HOT_100.csv" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/GenerateLyricsDataframe.py" afterPath="$PROJECT_DIR$/code/GenerateLyricsDataframe.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code/bhUtilities.py" afterPath="$PROJECT_DIR$/code/bhUtilities.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="project1.iws" />
@@ -33,8 +33,8 @@
           <file leaf-file-name="GenerateLyricsDataframe.py" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/code/GenerateLyricsDataframe.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.76" vertical-offset="270" max-vertical-offset="4680">
-                  <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+                <state vertical-scroll-proportion="-0.6556604" vertical-offset="4256" max-vertical-offset="4680">
+                  <caret line="221" column="35" selection-start-line="221" selection-start-column="35" selection-end-line="221" selection-end-column="35" />
                   <folding />
                 </state>
               </provider>
@@ -44,11 +44,21 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="MusicXMatch.py" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="MusicXMatch.py" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/code/MusicXMatch.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.92444444" vertical-offset="1168" max-vertical-offset="2628">
-                  <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+                <state vertical-scroll-proportion="-5.423077" vertical-offset="2001" max-vertical-offset="2628">
+                  <caret line="124" column="62" selection-start-line="124" selection-start-column="35" selection-end-line="124" selection-end-column="62" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="bhUtilities.py" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/code/bhUtilities.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.68" vertical-offset="4644" max-vertical-offset="5094">
+                  <caret line="277" column="25" selection-start-line="277" selection-start-column="25" selection-end-line="277" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -72,6 +82,7 @@
         <option value="$PROJECT_DIR$/code/GenerateLyrics.py" />
         <option value="$PROJECT_DIR$/code/bhUtilties.py" />
         <option value="$PROJECT_DIR$/code/MusicXMatch.py" />
+        <option value="$PROJECT_DIR$/code/bhUtilities.py" />
         <option value="$PROJECT_DIR$/code/GenerateLyricsDataframe.py" />
       </list>
     </option>
@@ -341,8 +352,8 @@
     <recent_temporary>
       <list size="3">
         <item index="0" class="java.lang.String" itemvalue="Python.GenerateLyricsDataframe" />
-        <item index="1" class="java.lang.String" itemvalue="Python.MusicXMatch" />
-        <item index="2" class="java.lang.String" itemvalue="Python.bhUtilties" />
+        <item index="1" class="java.lang.String" itemvalue="Python.bhUtilties" />
+        <item index="2" class="java.lang.String" itemvalue="Python.MusicXMatch" />
       </list>
     </recent_temporary>
   </component>
@@ -370,7 +381,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329235" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329235" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -498,14 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/MusicXMatch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.92444444" vertical-offset="1168" max-vertical-offset="2628">
-          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/code/GenerateLyrics.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6766467" vertical-offset="862" max-vertical-offset="1530">
@@ -514,18 +517,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/code/MusicXMatch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.423077" vertical-offset="2001" max-vertical-offset="2628">
+          <caret line="124" column="62" selection-start-line="124" selection-start-column="35" selection-end-line="124" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/code/bhUtilities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32180452" vertical-offset="3926" max-vertical-offset="5040">
-          <caret line="232" column="4" selection-start-line="232" selection-start-column="4" selection-end-line="232" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.68" vertical-offset="4644" max-vertical-offset="5094">
+          <caret line="277" column="25" selection-start-line="277" selection-start-column="25" selection-end-line="277" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/code/GenerateLyricsDataframe.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76" vertical-offset="270" max-vertical-offset="4680">
-          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+        <state vertical-scroll-proportion="-0.6556604" vertical-offset="4256" max-vertical-offset="4680">
+          <caret line="221" column="35" selection-start-line="221" selection-start-column="35" selection-end-line="221" selection-end-column="35" />
           <folding />
         </state>
       </provider>
