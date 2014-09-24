@@ -71,13 +71,13 @@ def get_billboard_pages():
 # TODO this funciton is unnecessary. program should read from web, and act on data directly.
 # TODO it is too expensive / risky to save .html to file in this way
 def write_hot_files(dic_list = get_billboard_pages()):
-    # TODO don't call to get_billboard_pages() as a parameter. remove the parameter and just call to
-    # TODO get_billboard_pages() in the body of the funciton
+    # TODO don't call to get_billboard_soup() as a parameter. remove the parameter and just call to
+    # TODO get_billboard_soup() in the body of the funciton
     """
     DESCRIPTION: parses the list of html billboard hot 100 pages and writes
      each as a separate file.
     PARAMS: allBillboardData: list of dictionaries generated from function
-     get_billboard_pages().
+     get_billboard_soup().
     RETURNS: nothing, writes each html as a file in the working directory
     """
 

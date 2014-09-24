@@ -7,9 +7,6 @@
 # http://opensource.org/licenses/MIT
 #
 # *********************************
-import urllib
-import urllib2
-
 __author__ = 'bjherger'
 
 # imports
@@ -17,6 +14,7 @@ __author__ = 'bjherger'
 import bhUtilities
 import json
 import time
+import urllib
 
 from pprint import pprint
 
@@ -35,7 +33,7 @@ def load_API_KEY():
     :return: API_KEY
     """
     global API_KEY
-
+    # TODO put somewhere else
     try:
         API_KEY = bhUtilities.read_file("/private/tmp/lyrics/musicxmatch.txt")
     except:
@@ -128,8 +126,10 @@ def get_lyrics(artist="", track=""):
 
     # add lyrics_ to all keys
     for (key, value) in return_dic.items():
-        new_key = "lyrics_" + key
-        return_dic[new_key] = return_dic.pop(key)
+        key = str(key)
+        if not key.startswith("lyrics_"):
+            new_key = "lyrics_" + key
+            return_dic[new_key] = return_dic.pop(key)
 
     return return_dic
 
@@ -138,6 +138,8 @@ def get_lyrics(artist="", track=""):
 # ###########################################
 load_API_KEY()
 if __name__ == "__main__":
-
-    pprint(get_lyrics("lady gaga", "bad romance"))
+    # TODO reuire has _lyrics key
+    print get_track_id("2 chainz", "no lie")
+    pprint(get_lyrics("2 chainz", "no lie"))
+    # pprint(get_lyrics("lady gaga", "bad romance"))
 
